@@ -1,0 +1,645 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Rangkuman PAS MAT Wajib</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="49be4950-d247-447e-9e3a-32eb9f5b5d93" class="page serif"><header><div class="page-header-icon undefined"><span class="icon">✒️</span></div><h1 class="page-title">Rangkuman PAS MAT Wajib</h1></header><div class="page-body"><p id="037bc1ee-ce4f-49a0-972a-443541cef071" class="block-color-red_background"><em>Ini rangkuman!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</em></p><hr id="d5ad602d-9834-4607-abc4-7fa3e40be1a0"/><nav id="8880547d-4dec-43c0-b837-01ef174e5dcf" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#42625824-331d-4dd5-8993-b49bbe1a91bf">Dimensi 3</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#21e227fe-0480-410e-9903-ca90fed97e29">Soal</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#36dcc6fa-6bea-4aa6-8b35-d5f31091eae4">Pembahasan</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#bb72a1b9-8725-47e9-8aac-958ab52b6571">Catatan</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#70332251-60d9-40c1-b2b0-6958bd87ef98">Statistika</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#68b89472-d30b-4c2a-9115-3183cfd17727">Karena banyak, link ae y wkwk</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3a430beb-be7c-47cb-963a-7793f17f2e3f">Catatan</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#76edb784-f1eb-46be-a686-6933139f6954">Kaidah Pencacahan</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c3f49e78-3b32-448f-a673-28d17b10e1ff">Filling Slot</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#d41911ee-b54d-433c-be71-bc515eec58e1">Pengambilan Bola</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f4864252-fdf1-4205-878f-cc72667adef6">Permutasi Siklis</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3de2e11e-5307-4716-8838-a84e4c4f0984">Sumber belajar</a></div></nav><p id="199e8039-85bd-4d1b-aabe-d4f051cfa43e" class="">
+</p><hr id="13c0d549-8aff-4eb1-8e47-24f7a916b7f2"/><h1 id="42625824-331d-4dd5-8993-b49bbe1a91bf" class="">Dimensi 3</h1><h2 id="21e227fe-0480-410e-9903-ca90fed97e29" class="">Soal</h2><ol id="bce26f3b-e328-437a-a0f0-4d92679c72a4" class="numbered-list" start="1"><li>Pada kubus ABCD.EFGH dengan panjang rusuk 6 cm, jarak titik B ke diagonal ruang AG adalah...
+A. √5
+B. 2√5
+C. 3√5
+D. 2√6
+E. 3√6</li></ol><ol id="2e078894-758f-40d2-ac18-2939d5860a19" class="numbered-list" start="2"><li>Diketahui kubus ABCD.EFGH dengan panjang rusuk 6 cm. Jarak titik G ke diagonal BE adalah….
+A. 3√6 cm
+B. 6√6 cm
+C. 9√6 cm
+D. 3√10 cm
+E. 9√10 cm</li></ol><ol id="8ce53b67-7506-4483-87cb-d3b84e6c5b23" class="numbered-list" start="3"><li>Diketahui limas beraturan T.ABCD dengan ABCD adalah persegi yang memiliki panjang AB = 4 cm dan TA = 6 cm. Jarak titik C ke garis AT =.....
+A. 1/14 √14 cm
+B. 2/3 √14 cm
+C. 3/4 √14 cm
+D. 4/3 √14 cm
+E. 3/2 √14 cm</li></ol><h2 id="36dcc6fa-6bea-4aa6-8b35-d5f31091eae4" class="">Pembahasan</h2><ol id="7d3a8512-1676-4ee3-9cde-4d40aa3456de" class="numbered-list" start="1"><li>Misalkan jaraknya adalah BP, dimana BP dengan AG harus tegak lurus. <figure id="dd9892e2-7cd7-49e3-b2f8-3e28f49d8520" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled.png"><img style="width:180px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled.png"/></a></figure><p id="a835142c-c44d-4cc5-b305-644cc93818ac" class="">Ambil segitiga ABG sebagai acuan perhitungan. Jika AB dijadikan alas segitiga, maka BG menjadi tingginya. Jika AG yang dijadikan alas, maka tinggi segitiganya adalah BP, dimana BP itulah yang hendak dicari. </p><figure id="dd4f374e-a320-453e-b6ce-32ff9982a71a" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%201.png"><img style="width:180px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%201.png"/></a></figure><p id="a246ab91-d556-4044-954a-12532c770aa6" class="">alas1 x tinggi1 = alas2 x tinggi2</p><figure id="102dbd98-3eed-4986-9ec5-748c2bd0a6a0" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%202.png"><img style="width:387px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%202.png"/></a></figure></li></ol><ol id="e32ac691-50b4-4097-a6de-009c4b5cbe79" class="numbered-list" start="2"><li>Sketsa kubusnya dulu, beri nama titik-titik sudutnya. Diberi tanda titik dan garis yang hendak dicari jaraknya.<figure id="eb6f1709-480d-4751-ac8d-7c64852a120d" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%203.png"><img style="width:176px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%203.png"/></a></figure><p id="e99e57a8-b9e9-4ebe-a0ac-a619002d3c66" class="">Tambahkan 2 garis lagi, hingga muncul segitiga BGE.</p><figure id="94b3d058-516c-4abf-b08d-16c671b58845" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%204.png"><img style="width:285px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%204.png"/></a></figure><p id="9aed6a0a-5c14-4f7e-a40d-4576304e360e" class="">Pada segitiga BGE, EB sama panjangnya dengan BG, sama juga dengan GE yaitu 6√2 (dapatnya dari rumus langsung diagonal sisi). Karena sama sisi, maka garis x tegak lurusnya akan di tengah-tengah garis EB. Terapkan pythagoras untuk segitiga BGJ untuk mendapat panjang x:</p><figure id="1e95a860-d533-4916-9082-576a34b43cb8" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%205.png"><img style="width:153px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%205.png"/></a></figure><p id="c4fcb9be-8542-440d-b399-9dabb2897d22" class="">Metode kedua, bisa juga dengan penggunaan setengah luas segitiga, seperti beberapa soal terdahulu. Namun di sini perlu digunakan rumus luas segitiga yang ada sinusnya, karena diketahui dua sisi dan sudut diantaranya, tengok catatan jika lupa. Misal perlu sudutnya, ∠E = ∠B = ∠ G = 60°karena sama sisi:</p><figure id="27e6b2d9-5f0b-4d6c-b9d0-ec110d5c265f" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%206.png"><img style="width:189px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%206.png"/></a></figure></li></ol><p id="20b45800-933f-49d5-ab5e-94df8030fc84" class="">
+</p><p id="9f9540ba-c154-40fc-a194-a9bea11cf9ea" class="">3. Sketsa soalnya seperti berikut ini</p><figure id="09caafc8-be56-45dd-ac29-15d96f1da7f0" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%207.png"><img style="width:144px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%207.png"/></a></figure><p id="37bfcb3a-c244-4647-b7c5-0447d67ac9c1" class="">Dengan pythagoras dapat ditentukan panjang AC,</p><figure id="4715fb6d-a0d0-4d94-a71d-74648a5d548f" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%208.png"><img style="width:153px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%208.png"/></a></figure><p id="cc493d3e-5104-44bc-868d-ee94da5bb53c" class="">dan juga tinggi limas TP</p><figure id="a772aae1-b19c-4feb-956a-a187c7b8e94a" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%209.png"><img style="width:136px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%209.png"/></a></figure><p id="77a503ba-77cd-412d-8119-40528d93ad6f" class="">Akhirnya dari segitiga ACT diperoleh nilai x</p><figure id="fb110891-dabe-414c-babb-5a197612b575" class="image"><a href="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%2010.png"><img style="width:252px" src="Rangkuman%20PAS%20MAT%20Wajib%20dd9892e27cd749e3b2f83e28f49d8520/Untitled%2010.png"/></a></figure><p id="e94aefa5-2aac-45a3-b91a-afcfd8e1abe7" class="">Jawaban: D. 4/3 √14 cm</p><h2 id="bb72a1b9-8725-47e9-8aac-958ab52b6571" class="">Catatan</h2><ul id="bf17b2d6-96e2-4bd1-a119-076bc99afa03" class="bulleted-list"><li>Hindari bidang, oleh karena itu cari garis tegak lurusnya dan buat segitiga baru</li></ul><ul id="33c4e70d-64a0-49aa-9807-18423dc67489" class="bulleted-list"><li>Cek segitiga siku-sik dengan phytagoras, kalau tidak sesuai berarti bukan </li></ul><ul id="3964c825-0cbd-4d23-adc0-049ba92a78dc" class="bulleted-list"><li>Kalau di segitiga siku-siku, untuk mencari jarak ke titik bagi yang berada garis miring pada segitiga, bisa menggunakan rumus:<figure id="76392b8b-75e7-40dc-af2e-0f8a2f3dad10" class="equation"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mi>a</mi><mi>l</mi><mi>a</mi><mi>s</mi><mo>×</mo><mi>t</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>g</mi><mi>i</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mi>a</mi><mi>l</mi><mi>a</mi><mi>s</mi><mo>×</mo><mi>t</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>g</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">\frac{1}{2} \times alas \times tinggi = \frac{1}{2} \times alas \times tinggi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">i</span></span></span></span></span></div></figure></li></ul><p id="10d7b376-3d93-4cc2-b4c2-01d661e9a4ef" class="">
+</p><hr id="6bfdd53f-018b-48da-8a0b-255924c08e0b"/><h1 id="70332251-60d9-40c1-b2b0-6958bd87ef98" class="">Statistika</h1><h2 id="68b89472-d30b-4c2a-9115-3183cfd17727" class="">Karena banyak, link ae y wkwk</h2><figure id="7e16a2f1-fa9a-451f-8b5e-efdc7791c043"><a href="https://matematikastudycenter.com/kelas-11-sma/141-statistika-data-rata-rata" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Statistika Data Rata-Rata</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan statistik menentukan mencari rerata / rata-rata/ rataan/ mean dari data tunggal, data tunggal dengan frekuensi dan data berkelompok materi matematika kelas 11 SMA IPA/IPS untuk beberapa cara kasus soal baik dengan metode nilai titik tengah atau menggunakan rataan sementara. Soal No.</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/141-statistika-data-rata-rata</div></div><img src="https://matematikastudycenter.com/images/11-statistika-rerata-1a.png" class="bookmark-image"/></a></figure><figure id="2346698c-b0da-4d7e-9010-3be1a5604758"><a href="https://matematikastudycenter.com/kelas-11-sma/140-statistika-data-median" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Statistika Data Median</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan statistik menentukan mencari median data tunggal, data tunggal dengan frekuensi dan data berkelompok materi matematika kelas 11 SMA IPA/IPS dengan beberapa tipe cara. Soal No. 1 Diberikan data tunggal yang telah diurutkan sebanyak 99 buah. Tentukan data keberapa yang menjadi median!</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/140-statistika-data-median</div></div><img src="https://matematikastudycenter.com/images/11-statistika-median-1a.png" class="bookmark-image"/></a></figure><figure id="7c6a33eb-c0fd-4c38-9bcc-974023c2dd2b"><a href="https://matematikastudycenter.com/kelas-11-sma/139-statistika-modus" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Statistika Modus</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan statistik menentukan modus data tunggal, data tunggal dengan frekuensi dan data berkelompok materi statistika matematika kelas 11 SMA program IPA/IPS. Soal No. 1 Diberikan data nilai ujian matematika anak kelas XI IPA-1 sebagai berikut: 7, 8, 8, 6, 8, 6, 9, 7, 6, 8, 5, 8 Tentukan modus dari data di atas!</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/139-statistika-modus</div></div><img src="https://matematikastudycenter.com/images/rumus-modus-5.png" class="bookmark-image"/></a></figure><figure id="18696ee4-c748-4777-8fe2-8c0fbefbdd18"><a href="https://matematikastudycenter.com/kelas-11-sma/142-statistika-data-simpangan-rata-rata" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Statistika Data Simpangan Rata-Rata</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan statistik menentukan mencari simpangan rata-rata atau simpangan rataan dari data tunggal, data tunggal dengan frekuensi dan data berkelompok materi matematika kelas 11 SMA IPA/IPS. Soal No. 1 Diberikan data sebagai berikut: 5, 6, 8, 5, 7 Tentukan nilai simpangan rata-rata data di atas!</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/142-statistika-data-simpangan-rata-rata</div></div></a></figure><figure id="b7848d78-5651-4ca4-b840-f8496b634d36"><a href="https://matematikastudycenter.com/kelas-11-sma/144-statistika-data-ragam-dan-simpangan-baku" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Statistika Data Ragam dan Simpangan Baku</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan statistik menentukan mencari ragam atau variansi dan simpangan baku dari data tunggal, data tunggal dengan frekuensi dan data berkelompok materi matematika kelas 11 SMA IPA/IPS. Soal No.</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/144-statistika-data-ragam-dan-simpangan-baku</div></div><img src="https://matematikastudycenter.com/images/11-statistika-rerata-1a.png" class="bookmark-image"/></a></figure><hr id="5620ddfa-3775-4d7a-bd4d-6d13774fe5f6"/><h2 id="3a430beb-be7c-47cb-963a-7793f17f2e3f" class="">Catatan</h2><p id="62853320-8e6f-45ba-aa5c-3cc7a695764e" class="">Baca-baca aja sambil apalin rumusnya </p><h1 id="76edb784-f1eb-46be-a686-6933139f6954" class="">Kaidah Pencacahan</h1><h2 id="c3f49e78-3b32-448f-a673-28d17b10e1ff" class="">Filling Slot</h2><figure id="a9391d78-4101-47e0-8223-eb0de6894786"><div class="source"><a href="https://matematikastudycenter.com/kelas-11-sma/146-permutasi-menyusun-bilangan">https://matematikastudycenter.com/kelas-11-sma/146-permutasi-menyusun-bilangan</a></div></figure><figure id="0f326549-6418-4d8a-b90d-53c92959004d"><a href="https://matematikastudycenter.com/kelas-11-sma/146-permutasi-menyusun-bilangan" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Permutasi Menyusun Bilangan</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan pencacahan permutasi dalam penyusunan bilangan dari angka-angka matematika kelas 11 SMA IPA, IPS juga bisa. Soal No. 1 Disediakan angka-angka sebagai berikut: 1, 2, 3, 4, 5 Tentukan banyaknya bilangan terdiri tiga angka yang bisa disusun / dibuat dari angka-angka di atas yang berlainan dengan syarat bilangan tersebut lebih besar dari 300.</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/146-permutasi-menyusun-bilangan</div></div><img src="https://matematikastudycenter.com/images/11-permutasi-susun-angka-1a.png" class="bookmark-image"/></a></figure><h2 id="d41911ee-b54d-433c-be71-bc515eec58e1" class="">Pengambilan Bola</h2><figure id="f77e0547-4b6b-4070-814f-120cbffea89d"><a href="https://matematikastudycenter.com/kelas-11-sma/147-kombinasi-dalam-peluang-pengambilan-bola" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Kombinasi dalam Peluang Pengambilan Bola</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal pembahasan penggunaan kombinasi penentuan banyak cara pada pengambilan bola atau kelereng dalam satu kotak atau kantong dan penerapannya dalam menentukan peluang kejadian untuk sekali pengambilan atau pengambilan berulang materi matematika kelas 11 SMA. Soal No. 1 Dalam sebuah kotak terdapat 8 buah bola kecil sebesar kelereng terdiri dari 5 buah bola berwarna merah dan 3 bola berwarna putih.</div></div><div class="bookmark-href">https://matematikastudycenter.com/kelas-11-sma/147-kombinasi-dalam-peluang-pengambilan-bola</div></div><img src="https://matematikastudycenter.com/images/permutasi-ambil-bola-3a.png" class="bookmark-image"/></a></figure><h2 id="f4864252-fdf1-4205-878f-cc72667adef6" class="">Permutasi Siklis</h2><hr id="f5b03234-3b64-48c9-b644-f79440a0fc3e"/><figure id="c3974849-3874-4023-83c5-e44fb0b93d9a"><a href="https://soalfismat.com/contoh-soal-permutasi-susunan-melingkar-dan-pembahasan/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Contoh soal permutasi susunan melingkar dan pembahasan</div><div class="bookmark-description">Postingan ini membahas contoh soal permutasi susunan melingkar dan pembahasannya atau penyelesaiannya. Permutasi melingkar adalah penyusunan unsur atau objek dalam bentuk lingkaran. Banyaknya permutasi n unsur yang disusun melingkar dirumuskan dengan (n - 1)!. Untuk lebih jelasnya perhatikan contoh soal permutasi susunan melingkar dan pembahasannya dibawah ini.</div></div><div class="bookmark-href"><img src="https://soalfismat.com/wp-content/uploads/2019/06/Favicon-sf.png" class="icon bookmark-icon"/>https://soalfismat.com/contoh-soal-permutasi-susunan-melingkar-dan-pembahasan/</div></div><img src="https://i1.wp.com/soalfismat.com/wp-content/uploads/2019/08/Contoh-soal-permutasi-susunan-melingkar.png?fit=600%2C360&amp;ssl=1" class="bookmark-image"/></a></figure><h1 id="3de2e11e-5307-4716-8838-a84e4c4f0984" class="">Sumber belajar</h1><figure id="65bbb845-f2c5-4fbe-bc58-e6ea3fc0d32c"><a href="http://matematikastudycenter.com" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Matematikastudycenter</div><div class="bookmark-description">Matematikastudycenter.com- Contoh soal dan pembahasan garis singgung lingkaran materi kelas 8 smp semester 2. Garis singgung persekutuan dalam, persekutuan luar dan sudut yang berkait dengan sifat garis singgung. Soal No. 1 Perhatikan gambar lingkaran berikut. PQ adalah garis singgung lingkaran O yang berjari-jari 5 cm.</div></div><div class="bookmark-href">http://matematikastudycenter.com</div></div><img src="http://matematikastudycenter.com/plugins/content/fb_tw_plus1/linkcmp.png" class="bookmark-image"/></a></figure><figure id="4f364659-6421-417a-98fc-42c96e3041d5"><a href="http://soalfismat.com" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Soalfismat.com</div><div class="bookmark-description">Penyelesaian soal Fisika dan Matematika</div></div><div class="bookmark-href"><img src="https://soalfismat.com/wp-content/uploads/2019/06/Favicon-sf.png" class="icon bookmark-icon"/>http://soalfismat.com</div></div><img src="https://i0.wp.com/soalfismat.com/wp-content/uploads/2019/06/cropped-Favicon-sf-1.png?fit=512%2C512&amp;ssl=1" class="bookmark-image"/></a></figure><figure id="7fd87776-0d8f-41d4-a86f-4a5fdb78dc22"><div class="source"><a href="https://www.youtube.com/watch?v=BmvE_CziArk">https://www.youtube.com/watch?v=BmvE_CziArk</a></div></figure><figure id="14aced81-8e99-43a4-b99c-3ca7adf31245"><div class="source"><a href="https://www.youtube.com/watch?v=Jg7PWJcAGcc">https://www.youtube.com/watch?v=Jg7PWJcAGcc</a></div></figure></div></article></body></html>
